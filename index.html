@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<!--
+  THESIS: Ενα ζεστό, editorial οδοντιατρείο-ραντεβού· αρνείται το κρύο clinical
+  grid-of-icon-cards που κάνει κάθε dental site να μοιάζει ίδιο.
+  OWN-WORLD: άμμος/πηλός φόντο, βαθύ βερντέ πράσινο + τερακότα accent,
+  GFS Didot (ελληνική κλασική serif) για τίτλους, Work Sans για σώμα.
+  STORY: ο επισκέπτης καταλαβαίνει πως είναι ένα καθιερωμένο (από 2005),
+  πολύγλωσσο, οικογενειακό ιατρείο στη Λατσιά· καλεί ή κλείνει ραντεβού.
+  FIRST VIEWPORT: ασύμμετρο hero, τίτλος σε editorial κλίμακα, λεπτή γραμμή,
+  CTA τηλεφώνου, απαλό σχέδιο-γραμμή αντί για stock φωτογραφία.
+  FORM: μονοσέλιδο σε στυλ "ευρετήριο ιατρείου" — υπηρεσίες ως λίστα με
+  λεπτές διαχωριστικές γραμμές, όχι κάρτες.
+  FINISH: unreviewed and undocumented is unfinished.
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Vasilis I. Koutsoftas — Οδοντίατρος, Λατσιά Λευκωσία</title>
+<meta name="description" content="Ιδιωτικό οδοντιατρείο του Dr. Vasilis I. Koutsoftas στη Λατσιά, Λευκωσία. Γενική & παιδοδοντιατρική φροντίδα, ενδοδοντία, αισθητική, εμφυτεύματα. Ελληνικά, Αγγλικά, Ρωσικά.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important;}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23F4EFE6' stroke='%2333544A' stroke-width='1.5'/%3E%3Cpath d='M11 13c0-2.2 2-4 5-4s5 1.8 5 4c0 2-1 3-1.4 5.4-.3 2-.7 4.6-2 4.6-1.1 0-1.2-2-1.6-4-.2-1-.5-1-1 0-.4 2-.5 4-1.6 4-1.3 0-1.7-2.6-2-4.6C11 16 11 15 11 13z' fill='none' stroke='%2333544A' stroke-width='1.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+<header class="site-header" id="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 17c0-3 3-5.4 7-5.4s7 2.4 7 5.4c0 2.6-1.3 4-1.9 7.2-.4 2.6-1 6-2.7 6-1.5 0-1.6-2.6-2.1-5.2-.3-1.4-.7-1.4-1 0-.5 2.6-.6 5.2-2.1 5.2-1.7 0-2.3-3.4-2.7-6C14.3 21 13 19.6 13 17z" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">Κoutsoftas <em>Dental</em></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+      <a href="#about">Σχετικά</a>
+      <a href="#services">Υπηρεσίες</a>
+      <a href="#why">Γιατί Εμάς</a>
+      <a href="#contact">Επικοινωνία</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="tel-chip" href="tel:+35722574142">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9 3 3.4 3.4 3 4 3h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <span>22 574 142</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Άνοιγμα μενού">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Πλοήγηση κινητού">
+    <a href="#about">Σχετικά</a>
+    <a href="#services">Υπηρεσίες</a>
+    <a href="#why">Γιατί Εμάς</a>
+    <a href="#contact">Επικοινωνία</a>
+    <a class="mobile-tel" href="tel:+35722574142">Κλήση: 22 574 142</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow-line">Ιδιωτικό Οδοντιατρείο &middot; Λατσιά, Λευκωσία &middot; από το 2005</p>
+        <h1 class="hero-title">Dr.&nbsp;Vasilis&nbsp;I.<br>Koutsoftas</h1>
+        <p class="hero-role">Οδοντίατρος &mdash; Χειρουργός Οδοντίατρος</p>
+        <p class="hero-lede">
+          Ήρεμη, προσεκτική οδοντιατρική φροντίδα στην καρδιά της Λατσιάς.
+          Μια οικογενειακή πρακτική για κάθε ηλικία &mdash; από το πρώτο
+          δοντάκι έως τη φροντίδα μιας ζωής &mdash; σε τρεις γλώσσες.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+35722574142">
+            <span>Κλείστε Ραντεβού</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-outline" href="tel:+35799579724">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9 3 3.4 3.4 3 4 3h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            <span>99 579 724</span>
+          </a>
+        </div>
+        <p class="hero-langs">Εξυπηρέτηση στα <strong>Ελληνικά</strong>, <strong>Αγγλικά</strong> &amp; <strong>Ρωσικά</strong></p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true" data-reveal data-reveal-delay="120">
+        <svg class="hero-art" viewBox="0 0 460 520" fmt="svg">
+          <circle cx="230" cy="248" r="200" class="ring ring-1"/>
+          <circle cx="230" cy="248" r="150" class="ring ring-2"/>
+          <path class="sprig" d="M230 90c-6 60-40 70-40 130 0 55 18 100 40 170 22-70 40-115 40-170 0-60-34-70-40-130z"/>
+          <path class="sprig-leaf" d="M230 150c-18-14-42-10-52 8 20 10 40 6 52-8z"/>
+          <path class="sprig-leaf" d="M230 150c18-14 42-10 52 8-20 10-40 6-52-8z"/>
+          <path class="sprig-leaf" d="M228 210c-20-10-46-2-54 18 22 6 42-2 54-18z"/>
+          <path class="sprig-leaf" d="M232 210c20-10 46-2 54 18-22 6-42-2-54-18z"/>
+          <path class="sprig-leaf" d="M226 270c-20-6-44 4-50 24 22 4 40-6 50-24z"/>
+          <path class="sprig-leaf" d="M234 270c20-6 44 4 50 24-22 4-40-6-50-24z"/>
+          <circle cx="230" cy="248" r="3.5" class="dot"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-lead" data-reveal>
+        <h2>Είκοσι χρόνια φροντίδας<br>στη γειτονιά σας.</h2>
+      </div>
+      <div class="about-body" data-reveal data-reveal-delay="80">
+        <p>
+          Ο Dr. Vasilis I. Koutsoftas λειτουργεί το ιδιωτικό του οδοντιατρείο
+          στη Λατσιά από το <strong>2005</strong>, προσφέροντας ολοκληρωμένη
+          οδοντιατρική φροντίδα σε γενιές της ίδιας οικογένειας. Σπούδασε στο
+          <strong> RUDN University</strong> της Μόσχας, αποφοιτώντας το
+          <strong> 2003</strong> με ειδίκευση στην Οδοντιατρική Χειρουργική.
+        </p>
+        <p>
+          Η κλινική εμπειρία δύο δεκαετιών συναντά μια ήρεμη, προσωπική
+          προσέγγιση &mdash; κάθε ραντεβού σχεδιάζεται γύρω από τον ασθενή,
+          όχι το ρολόι.
+        </p>
+        <dl class="fact-list">
+          <div class="fact">
+            <dt>Σπουδές</dt>
+            <dd>RUDN University, Μόσχα &middot; 2003</dd>
+          </div>
+          <div class="fact">
+            <dt>Ειδίκευση</dt>
+            <dd>Dentist &mdash; Surgeon</dd>
+          </div>
+          <div class="fact">
+            <dt>Ιατρείο από</dt>
+            <dd>2005 &middot; Λατσιά, Λευκωσία</dd>
+          </div>
+          <div class="fact">
+            <dt>Γλώσσες</dt>
+            <dd>Ελληνικά &middot; Αγγλικά &middot; Ρωσικά</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2>Υπηρεσίες</h2>
+        <p>Ολοκληρωμένη φροντίδα κάτω από μία στέγη, για κάθε ηλικία.</p>
+      </div>
+
+      <div class="service-groups">
+        <div class="service-group" data-reveal>
+          <h3>Γενική &amp; Προληπτική Φροντίδα</h3>
+          <ul class="service-list">
+            <li><span>Γενική οδοντιατρική εξέταση</span></li>
+            <li><span>Προληπτική οδοντιατρική</span></li>
+            <li><span>Λεύκανση δοντιών</span></li>
+          </ul>
+        </div>
+
+        <div class="service-group" data-reveal data-reveal-delay="60">
+          <h3>Παιδοδοντιατρική</h3>
+          <ul class="service-list">
+            <li><span>Φροντίδα παιδιών, από το πρώτο δοντάκι</span></li>
+            <li><span>Προληπτική καθοδήγηση για γονείς</span></li>
+          </ul>
+        </div>
+
+        <div class="service-group" data-reveal data-reveal-delay="120">
+          <h3>Ενδοδοντία &amp; Ούλα</h3>
+          <ul class="service-list">
+            <li><span>Ενδοδοντική θεραπεία (ρίζες)</span></li>
+            <li><span>Θεραπεία ούλων</span></li>
+          </ul>
+        </div>
+
+        <div class="service-group" data-reveal data-reveal-delay="180">
+          <h3>Αισθητική &amp; Προσθετική</h3>
+          <ul class="service-list">
+            <li><span>Αισθητική / κοσμητική οδοντιατρική</span></li>
+            <li><span>Στεφάνες &amp; γέφυρες</span></li>
+            <li><span>Όψεις &mdash; Veneers</span></li>
+            <li><span>Εμφυτεύματα</span></li>
+          </ul>
+        </div>
+
+        <div class="service-group" data-reveal data-reveal-delay="240">
+          <h3>Χειρουργική</h3>
+          <ul class="service-list">
+            <li><span>Εξαγωγές δοντιών</span></li>
+            <li><span>Φρονιμίτες</span></li>
+            <li><span>Αφαίρεση κύστεων</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="why" id="why">
+    <div class="wrap why-grid">
+      <div class="why-lead" data-reveal>
+        <h2>Γιατί να μας εμπιστευτείτε</h2>
+      </div>
+
+      <ul class="why-list">
+        <li data-reveal>
+          <svg class="why-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 20c-3.5-1-6-3.8-6-8 0-3 1.6-5.2 3-6.6M15 20c3.5-1 6-3.8 6-8 0-3-1.6-5.2-3-6.6M12 3v3M9.5 8.5c.7-.7 1.6-1 2.5-1s1.8.3 2.5 1M12 12v5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Παιδιά ευπρόσδεκτα</h3>
+          <p>Δεχόμαστε τους μικρούς ασθενείς μας από το πρώτο τους δοντάκι, με υπομονή και φροντίδα.</p>
+        </li>
+        <li data-reveal data-reveal-delay="60">
+          <svg class="why-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.3"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Επείγοντα Σαββατοκύριακου</h3>
+          <p>Επείγουσα εξυπηρέτηση Σαββατοκύριακα και αργίες, όταν ο πόνος δεν περιμένει.</p>
+        </li>
+        <li data-reveal data-reveal-delay="120">
+          <svg class="why-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          <h3>Πολύγλωσση εξυπηρέτηση</h3>
+          <p>Επικοινωνία στα Ελληνικά, Αγγλικά και Ρωσικά &mdash; χωρίς παρεξηγήσεις, με σαφήνεια.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION / CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info" data-reveal>
+        <h2>Επισκεφθείτε μας</h2>
+
+        <div class="contact-block">
+          <h3>Διεύθυνση</h3>
+          <p>87 Giannou Kranidioti Avenue<br>
+          2ος όροφος, γραφείο 202<br>
+          Λατσιά, 2231 Λευκωσία, Κύπρος</p>
+        </div>
+
+        <div class="contact-block">
+          <h3>Τηλέφωνα</h3>
+          <p>
+            <a href="tel:+35722574142">+357 22 574 142</a><br>
+            <a href="tel:+35799579724">+357 99 579 724</a>
+          </p>
+        </div>
+
+        <div class="contact-block">
+          <h3>Ωράριο Λειτουργίας</h3>
+          <p class="placeholder-note">
+            Δευτέρα &ndash; Παρασκευή: 09:00 &ndash; 13:00 &amp; 15:00 &ndash; 19:00<br>
+            Σάββατο: κατόπιν ραντεβού (επείγοντα)
+            <span class="placeholder-tag">προς επιβεβαίωση</span>
+          </p>
+        </div>
+
+        <a class="btn btn-primary contact-cta" href="tel:+35722574142">
+          <span>Καλέστε τώρα</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="contact-map" data-reveal data-reveal-delay="100">
+        <iframe
+          title="Χάρτης τοποθεσίας ιατρείου"
+          src="https://www.google.com/maps?q=87%20Giannou%20Kranidioti%20Avenue%2C%20Latsia%2C%202231%20Nicosia%2C%20Cyprus&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="28" height="28"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 17c0-3 3-5.4 7-5.4s7 2.4 7 5.4c0 2.6-1.3 4-1.9 7.2-.4 2.6-1 6-2.7 6-1.5 0-1.6-2.6-2.1-5.2-.3-1.4-.7-1.4-1 0-.5 2.6-.6 5.2-2.1 5.2-1.7 0-2.3-3.4-2.7-6C14.3 21 13 19.6 13 17z" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <p>Dr. Vasilis I. Koutsoftas<br>Οδοντίατρος &mdash; Χειρουργός Οδοντίατρος</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Διεύθυνση</h4>
+      <p>87 Giannou Kranidioti Avenue<br>2ος όροφος, γραφείο 202<br>Λατσιά, 2231 Λευκωσία, Κύπρος</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Επικοινωνία</h4>
+      <p><a href="tel:+35722574142">+357 22 574 142</a><br>
+      <a href="tel:+35799579724">+357 99 579 724</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Πλοήγηση</h4>
+      <p><a href="#about">Σχετικά</a><br>
+      <a href="#services">Υπηρεσίες</a><br>
+      <a href="#contact">Επικοινωνία</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year"></span> Dr. Vasilis I. Koutsoftas. Με επιφύλαξη παντός δικαιώματος.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
