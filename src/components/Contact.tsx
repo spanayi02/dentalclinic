@@ -1,10 +1,8 @@
-import Grommet from "./Grommet";
-
 export default function Contact() {
   return (
     <section id="contact" className="bg-pine py-24 text-paper sm:py-28">
       <div className="mx-auto grid max-w-[1180px] gap-14 px-6 lg:grid-cols-[0.9fr_1.1fr]">
-        <div>
+        <div className="reveal" style={{ ["--i" as any]: 0 }}>
           <h2 className="mb-9 max-w-[12ch] font-display text-[clamp(2rem,3.4vw,2.9rem)] leading-[1.1]">
             Επισκεφθείτε μας
           </h2>
@@ -62,9 +60,7 @@ export default function Contact() {
           </a>
         </div>
 
-        <div className="relative">
-          <Grommet className="absolute -left-3 -top-3 z-10 h-9 w-9 drop-shadow" />
-          <Grommet className="absolute -right-3 -top-3 z-10 h-9 w-9 drop-shadow" />
+        <div className="reveal relative" style={{ ["--i" as any]: 1 }}>
           <div className="overflow-hidden rounded-[3px] border border-paper/25 shadow-card" style={{ aspectRatio: "4 / 3.2" }}>
             <iframe
               title="Χάρτης τοποθεσίας ιατρείου"

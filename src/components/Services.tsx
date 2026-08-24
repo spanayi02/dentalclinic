@@ -1,34 +1,30 @@
 import { useRef } from "react";
 import IndexCard from "./IndexCard";
+import ToothMark from "./ToothMark";
 
 const GROUPS = [
   {
-    tag: "Α",
-    tint: "bg-pine",
+    tint: "text-pine",
     title: "Γενική & Προληπτική Φροντίδα",
     items: ["Γενική οδοντιατρική εξέταση", "Προληπτική οδοντιατρική", "Λεύκανση δοντιών"],
   },
   {
-    tag: "Β",
-    tint: "bg-claystrong",
+    tint: "text-claystrong",
     title: "Παιδοδοντιατρική",
     items: ["Φροντίδα παιδιών, από το πρώτο δοντάκι", "Προληπτική καθοδήγηση για γονείς"],
   },
   {
-    tag: "Γ",
-    tint: "bg-pinedeep",
+    tint: "text-pinedeep",
     title: "Ενδοδοντία & Ούλα",
     items: ["Ενδοδοντική θεραπεία (ρίζες)", "Θεραπεία ούλων"],
   },
   {
-    tag: "Δ",
-    tint: "bg-claydeep",
+    tint: "text-claydeep",
     title: "Αισθητική & Προσθετική",
     items: ["Αισθητική / κοσμητική οδοντιατρική", "Στεφάνες & γέφυρες", "Όψεις (Veneers)", "Εμφυτεύματα"],
   },
   {
-    tag: "Ε",
-    tint: "bg-pine",
+    tint: "text-pine",
     title: "Χειρουργική",
     items: ["Εξαγωγές δοντιών", "Φρονιμίτες", "Αφαίρεση κύστεων"],
   },
@@ -44,12 +40,12 @@ export default function Services() {
   return (
     <section id="services" className="border-t border-b border-ink/10 bg-claywash py-24 sm:py-28">
       <div className="mx-auto max-w-[1180px] px-6">
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        <div className="reveal flex flex-wrap items-end justify-between gap-6" style={{ ["--i" as any]: 0 }}>
           <div className="max-w-[46ch]">
             <h2 className="font-display text-[clamp(2rem,3.4vw,2.9rem)] leading-[1.1] text-ink">Υπηρεσίες</h2>
             <p className="mt-3 text-[1.05rem] text-inksoft">
-              Ένας φάκελος, πέντε κατηγορίες &mdash; ολοκληρωμένη φροντίδα κάτω
-              από μία στέγη, για κάθε ηλικία. Σύρετε για να δείτε όλες.
+              Ολοκληρωμένη οδοντιατρική φροντίδα κάτω από μία στέγη, για κάθε
+              ηλικία. Σύρετε για να δείτε όλες τις κατηγορίες.
             </p>
           </div>
           <div className="hidden gap-2 sm:flex">
@@ -79,17 +75,11 @@ export default function Services() {
             <IndexCard
               key={g.title}
               rotate={i % 2 === 0 ? -1.2 : 1}
-              delay={i * 0.07}
+              index={i}
               className="w-[280px] shrink-0 snap-start p-6 sm:w-[300px]"
             >
-              <span
-                className={`absolute -top-3 right-5 flex h-8 w-8 items-center justify-center rounded-sm ${g.tint} font-display text-sm text-paper shadow-card`}
-                style={{ rotate: "3deg" }}
-                aria-hidden="true"
-              >
-                {g.tag}
-              </span>
-              <h3 className="pr-6 font-display text-xl leading-snug text-pinedeep">{g.title}</h3>
+              <ToothMark className={`h-8 w-8 ${g.tint}`} />
+              <h3 className="mt-4 font-display text-xl leading-snug text-pinedeep">{g.title}</h3>
               <ul className="mt-4 space-y-2.5 border-t border-dashed border-ink/20 pt-4">
                 {g.items.map((item) => (
                   <li key={item} className="text-[0.95rem] leading-snug text-ink">

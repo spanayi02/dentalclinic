@@ -11,13 +11,13 @@ export default function About() {
   return (
     <section id="about" className="border-t border-ink/10 py-24 sm:py-28">
       <div className="mx-auto grid max-w-[1180px] gap-14 px-6 lg:grid-cols-[0.85fr_1.15fr]">
-        <div>
+        <div className="reveal" style={{ ["--i" as any]: 0 }}>
           <h2 className="max-w-[11ch] font-display text-[clamp(2rem,3.4vw,2.9rem)] leading-[1.1] text-ink">
             Είκοσι χρόνια φροντίδας στη γειτονιά σας.
           </h2>
         </div>
 
-        <IndexCard rotate={0.6} punched className="p-8 sm:p-10">
+        <IndexCard rotate={0.6} index={1} punched className="p-8 sm:p-10">
           <p className="max-w-[62ch] text-[1.05rem] leading-relaxed text-inksoft">
             Ο <strong className="font-semibold text-ink">Dr. Vasilis I. Koutsoftas</strong>{" "}
             λειτουργεί το ιδιωτικό του οδοντιατρείο στη Λατσιά από το{" "}

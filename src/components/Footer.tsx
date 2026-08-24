@@ -1,3 +1,5 @@
+import ToothMark from "./ToothMark";
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -5,10 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-[1180px] border-b border-paper/[0.14] px-6 pb-12">
         <div className="grid gap-10 sm:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div className="text-paper">
-            <svg viewBox="0 0 40 40" width="28" height="28" className="mb-3 text-clay">
-              <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" strokeWidth="1.2" />
-              <circle cx="20" cy="20" r="4" fill="currentColor" />
-            </svg>
+            <ToothMark className="mb-3 h-7 w-7 text-clay" />
             <p className="text-[0.95rem] leading-relaxed">
               Dr. Vasilis I. Koutsoftas
               <br />

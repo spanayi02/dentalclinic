@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import ToothMark from "./ToothMark";
 
 const LINKS = [
   { href: "#about", label: "Σχετικά" },
@@ -26,11 +27,8 @@ export default function Nav() {
       } backdrop-blur-md`}
     >
       <div className="mx-auto flex h-[76px] max-w-[1180px] items-center justify-between px-6">
-        <a href="#top" className="flex items-center gap-2">
-          <svg viewBox="0 0 40 40" width="30" height="30" className="text-pine">
-            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" strokeWidth="1.2" />
-            <circle cx="20" cy="20" r="4" fill="currentColor" />
-          </svg>
+        <a href="#top" className="flex items-center gap-2.5">
+          <ToothMark className="h-7 w-7 text-pine" />
           <span className="font-display text-xl">
             Koutsoftas <em className="text-pine not-italic italic">Dental</em>
           </span>
