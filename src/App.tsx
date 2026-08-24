@@ -1,4 +1,5 @@
 import { MotionConfig } from "framer-motion";
+import useReveal from "./hooks/useReveal";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
@@ -13,6 +14,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function App() {
+  useReveal();
+
   return (
     <MotionConfig reducedMotion="user">
       <a
