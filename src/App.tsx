@@ -1,9 +1,14 @@
 import { MotionConfig } from "framer-motion";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
+import TrustBar from "./components/TrustBar";
 import About from "./components/About";
 import Services from "./components/Services";
 import WhyUs from "./components/WhyUs";
+import Testimonials from "./components/Testimonials";
+import Journey from "./components/Journey";
+import FAQ from "./components/FAQ";
+import FinalCTA from "./components/FinalCTA";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -19,9 +24,14 @@ export default function App() {
       <Nav />
       <main id="main">
         <Hero />
+        <TrustBar />
         <About />
         <Services />
         <WhyUs />
+        <Testimonials />
+        <Journey />
+        <FAQ />
+        <FinalCTA />
         <Contact />
       </main>
       <Footer />

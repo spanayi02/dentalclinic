@@ -44,6 +44,18 @@ export default function About() {
             ))}
           </dl>
         </IndexCard>
+
+        <div className="lg:col-start-2">
+          <IndexCard rotate={-0.5} index={2} className="p-6 sm:p-7">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.1em] text-pinedeep">
+              Συνεργάτης στο ιατρείο
+            </p>
+            <p className="mt-2 font-display text-lg text-ink">Dr. Katerina Koutsofta</p>
+            <p className="mt-1 text-[0.95rem] text-inksoft">
+              Χειρουργός Οδοντίατρος &middot; Γενική &amp; Παιδοδοντιατρική φροντίδα
+            </p>
+          </IndexCard>
+        </div>
       </div>
     </section>
   );
