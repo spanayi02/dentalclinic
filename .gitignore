@@ -1,3 +1,4 @@
 .scratch-serve.ps1
 node_modules/
 .impeccable/
+dist/
